@@ -34,7 +34,7 @@ function LED1_Off(){
   var options = {
    useSSL: false,
     userName: "mayra.machado@unach.edu.ec",
-    password: "@maymachado97",
+    password: "@mayramachado97",
     onSuccess:onConnect,
     onFailure:doFail
   }
