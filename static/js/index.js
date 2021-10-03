@@ -17,6 +17,14 @@ function LED1_Off(){
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
+function LED1(){  
+  //alert("led off");
+  console.log("led off");
+  message = new Paho.MQTT.Message("BTN");
+      message.destinationName = "mayra.machado@unach.edu.ec/T1";
+      client.send(message);
+  //document.getElementById("sensor").innerHTML="led off";
+}
 
 
 
@@ -72,5 +80,6 @@ function LED1_Off(){
     var m=message.payloadString.split("*")
 	  document.getElementById("sensor1").innerHTML=m[0];
     document.getElementById("sensor2").innerHTML=m[1];
+    document.getElementById("historial").innerHTML=m[2];
   }
   
